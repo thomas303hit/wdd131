@@ -24,6 +24,11 @@ header {
     margin-bottom: 1rem;
 }
 
+#course-title {
+    color: white !important;
+}
+
+
 nav {
     display: flex;
     justify-content: center;
