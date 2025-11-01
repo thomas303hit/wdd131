@@ -14,7 +14,7 @@ body {
 /* ========== HEADER ========== */
 header {
     background-color: #ffffff; /* Dark green */
-    color: #bebebe !important; /* Force white text */
+    color: #000000 !important; /* Force white text */
     padding: 1rem;
     text-align: center;
 }
@@ -23,9 +23,9 @@ header {
 header *,
 header *::before,
 header *::after {
-    color: #ffffff !important;
-    fill: #ffffff !important;
-    stroke: #ffffff !important;
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
 }
 
 /* Specific header text styling */
@@ -33,7 +33,7 @@ div.header-text,
 .header-text,
 header .header-text,
 #course-title {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -47,7 +47,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff !important;
+    color: #0d0d0d !important;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -57,7 +57,7 @@ nav a {
 nav a:hover,
 nav a:focus {
     background-color: #0d3c14; /* Even darker green on hover */
-    color: #ffffff !important;
+    color: #f5efef !important;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -86,7 +86,7 @@ h1 {
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(1, 1, 1, 0.1);
 }
 
 .card h2 {
@@ -106,8 +106,8 @@ h1 {
 
 /* ========== FOOTER ========== */
 footer {
-    background-color: #1b5e20; /* Same green as header */
-    color: #ffffff !important;
+    background-color: #ffffff; /* Same green as header */
+    color: #000000 !important;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
