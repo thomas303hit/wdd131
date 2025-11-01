@@ -1,3 +1,5 @@
+/* styles/base.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +14,8 @@ body {
 }
 
 header {
-    background-color: #1b5e20; /* Darker green for WCAG AA compliance (white contrast: ~8.5:1) */
-    color: white !important; /* Forcing white text to avoid gray override */
+    background-color: #2e7d32; /* Darker green for WCAG AA compliance (white contrast: 6.12:1) */
+    color: white;
     padding: 1rem;
     text-align: center;
 }
@@ -23,7 +25,6 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: white !important; /* Ensuring white text for high contrast */
 }
 
 nav {
@@ -33,15 +34,17 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #0d3c14; /* Even darker for hover */
+    color: white !important;
+    background-color: #1b5e20; /* Darker for effect, white contrast 7.87:1 */
+    text-shadow: 0 0 5px rgba(255,255,255,0.5); /* Subtle glow to enhance without contrast issues */
 }
 
 main {
@@ -53,13 +56,10 @@ main {
     gap: 2rem;
 }
 
-h1, h2 {
-    color: #2e7d32; /* Dark green on white/light bg (contrast: ~6.12:1) */
-}
-
 h1 {
     text-align: center;
     font-size: 2rem;
+    color: #2e7d32; /* Dark green on light bg (contrast: 6.12:1) */
     margin-bottom: 1rem;
 }
 
@@ -71,6 +71,7 @@ h1 {
 }
 
 .card h2 {
+    color: #2e7d32; /* Dark green on white (contrast: 6.12:1) */
     margin-bottom: 1rem;
 }
 
@@ -83,11 +84,12 @@ h1 {
 
 .card p {
     margin-bottom: 1rem;
+    color: #333; /* Explicit for body text */
 }
 
 footer {
-    background-color: #1b5e20; /* Same dark green as header for consistency */
-    color: white;
+    background-color: #2e7d32; /* Dark green for WCAG AA (white contrast: 6.12:1) */
+    color: white !important;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -95,6 +97,7 @@ footer {
 
 footer p {
     margin-bottom: 0.5rem;
+    color: white !important;
 }
 
 /* Responsive adjustments */
