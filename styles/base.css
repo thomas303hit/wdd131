@@ -123,3 +123,12 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
+
+header {
+  background-color: #1b5e20;
+  color: #ffffff; 
+}
+
+header * {
+  color: inherit; 
+}
