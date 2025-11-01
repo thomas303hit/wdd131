@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #2e7d32; /* Darker green for WCAG AA compliance (white contrast: ~6.12:1) */
+    background-color: #1b5e20; /* Darker green for WCAG AA compliance (white contrast: ~8.5:1) */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -23,7 +23,7 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: white; /* Garantindo que o texto seja branco e visível no fundo verde */
+    color: white; /* Ensuring white text for high contrast */
 }
 
 nav {
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1b5e20; /* Even darker for hover, maintains high contrast */
+    background-color: #0d3c14; /* Even darker for hover */
 }
 
 main {
@@ -86,7 +86,7 @@ h1 {
 }
 
 footer {
-    background-color: #2e7d32; /* Dark green for WCAG AA (white contrast: ~6.12:1) */
+    background-color: #1b5e20; /* Same dark green as header for consistency */
     color: white;
     text-align: center;
     padding: 1rem;
