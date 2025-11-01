@@ -7,39 +7,52 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    /* Removed color: #333; to avoid overriding header text */
+    color: #333; /* default page text color */
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #1b5e20; /* Darker green for WCAG AA compliance (white contrast: ~8.5:1) */
+    background-color: #1b5e20; /* Darker green for WCAG AA compliance */
     padding: 1rem;
     text-align: center;
 }
 
+/* Ensure all header/footer text and links are white to meet contrast requirements */
+header,
+header a,
+header .header-text,
+header #course-title,
+footer,
+footer p,
+footer a {
+    color: #ffffff !important;
+}
+
 .header-text {
-    color: white !important; /* Forcing white text in header to pass contrast */
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    color: inherit;
 }
 
-nav a:hover {
-    background-color: #0d3c14; /* Even darker for hover */
+nav a:hover,
+nav a:focus {
+    background-color: #0d3c14; /* Even darker for hover/focus */
+    outline: none;
 }
 
 main {
@@ -52,7 +65,7 @@ main {
 }
 
 h1, h2 {
-    color: #2e7d32; /* Dark green on white/light bg (contrast: ~6.12:1) */
+    color: #2e7d32; /* Dark green on white/light bg */
 }
 
 h1 {
@@ -62,10 +75,10 @@ h1 {
 }
 
 .card {
-    background: white;
+    background: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -81,11 +94,11 @@ h1 {
 
 .card p {
     margin-bottom: 1rem;
+    color: #333;
 }
 
 footer {
-    background-color: #1b5e20; /* Same dark green as header for consistency */
-    color: white;
+    background-color: #1b5e20;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -93,6 +106,7 @@ footer {
 
 footer p {
     margin-bottom: 0.5rem;
+    color: inherit;
 }
 
 /* Responsive adjustments */
