@@ -31,11 +31,11 @@ nav {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    color: #ffffff; 
 }
 
 nav a:hover {
