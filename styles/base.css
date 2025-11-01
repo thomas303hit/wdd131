@@ -12,20 +12,24 @@ body {
 }
 
 header {
-    background-color: #1b5e20; /* Darker green for WCAG AA compliance (white contrast: ~8.5:1) */
+    background-color: #1b5e20;
     padding: 1rem;
     text-align: center;
+    color: #ffffff !important;
+}
+
+header * {
+    color: #ffffff !important;
 }
 
 .header-text {
-    color: white !important; /* Forcing white text in header to pass contrast */
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 #course-title {
-    color: white !important;
+    color: #ffffff !important;
 }
 
 
