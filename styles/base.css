@@ -132,3 +132,19 @@ header {
 header * {
   color: inherit; 
 }
+/* === FIX FINAL: header-text color === */
+header {
+  background-color: #1b5e20;
+  color: #ffffff !important; 
+}
+
+header * {
+  color: #ffffff !important; 
+}
+
+div.header-text,
+.header-text,
+header .header-text,
+#course-title {
+  color: #ffffff !important; 
+}
