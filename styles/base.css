@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +47,7 @@ nav a {
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    color: #ffffff; /* mudou de 'inherit' para branco para resolver contraste */
+    color: inherit;
 }
 
 nav a:hover,
