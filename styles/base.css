@@ -8,18 +8,18 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4; /* Light gray background */
-    color: #212121; /* Dark neutral text */
+    color: #212121; /* Default dark text */
 }
 
-/* HEADER */
+/* ========== HEADER ========== */
 header {
     background-color: #1b5e20; /* Dark green */
-    color: #ffffff; /* Force all text inside header to white */
+    color: #ffffff !important; /* Force white text */
     padding: 1rem;
     text-align: center;
 }
 
-/* Force every element in header to white text */
+/* Ensure absolutely everything inside header stays white */
 header *,
 header *::before,
 header *::after {
@@ -28,18 +28,18 @@ header *::after {
     stroke: #ffffff !important;
 }
 
-/* Header title and course name */
-.header-text {
+/* Specific header text styling */
+div.header-text,
+.header-text,
+header .header-text,
+#course-title {
+    color: #ffffff !important;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-#course-title {
-    font-weight: 600;
-}
-
-/* NAVIGATION */
+/* ========== NAVIGATION ========== */
 nav {
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -56,11 +56,11 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    background-color: #0d3c14; /* Darker green for hover */
-    color: #ffffff; /* Keep strong contrast */
+    background-color: #0d3c14; /* Even darker green on hover */
+    color: #ffffff !important;
 }
 
-/* MAIN CONTENT */
+/* ========== MAIN CONTENT ========== */
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -70,9 +70,9 @@ main {
     gap: 2rem;
 }
 
-/* HEADINGS */
+/* Headings */
 h1, h2 {
-    color: #2e7d32; /* Dark green on light background (~6:1 contrast) */
+    color: #2e7d32; /* Dark green for contrast on light background */
 }
 
 h1 {
@@ -81,7 +81,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* CARD COMPONENT */
+/* Cards */
 .card {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -104,10 +104,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* FOOTER */
+/* ========== FOOTER ========== */
 footer {
-    background-color: #1b5e20; /* Same as header */
-    color: #ffffff;
+    background-color: #1b5e20; /* Same green as header */
+    color: #ffffff !important;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -117,34 +117,9 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-/* RESPONSIVE */
+/* ========== RESPONSIVE ========== */
 @media (min-width: 600px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-}
-
-header {
-  background-color: #1b5e20;
-  color: #ffffff; 
-}
-
-header * {
-  color: inherit; 
-}
-/* === FIX FINAL: header-text color === */
-header {
-  background-color: #1b5e20;
-  color: #ffffff !important; 
-}
-
-header * {
-  color: #ffffff !important; 
-}
-
-div.header-text,
-.header-text,
-header .header-text,
-#course-title {
-  color: #ffffff !important; 
 }
