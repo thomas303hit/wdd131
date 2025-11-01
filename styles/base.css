@@ -7,27 +7,39 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #212121; /* Dark neutral text */
 }
 
+/* HEADER */
 header {
-    background-color: #1b5e20; /* Dark green for excellent contrast */
-    color: #ffffff; /* Ensure all text inside header is white */
+    background-color: #1b5e20; /* Dark green */
+    color: #ffffff; /* Force all text inside header to white */
     padding: 1rem;
     text-align: center;
 }
 
+/* Force every element in header to white text */
+header *,
+header *::before,
+header *::after {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* Header title and course name */
 .header-text {
-    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 #course-title {
-    color: #ffffff;
+    font-weight: 600;
 }
 
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: center;
@@ -45,9 +57,10 @@ nav a {
 nav a:hover,
 nav a:focus {
     background-color: #0d3c14; /* Darker green for hover */
-    color: #ffffff; /* Keep white text for contrast */
+    color: #ffffff; /* Keep strong contrast */
 }
 
+/* MAIN CONTENT */
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -57,8 +70,9 @@ main {
     gap: 2rem;
 }
 
+/* HEADINGS */
 h1, h2 {
-    color: #2e7d32; /* Dark green on light background (contrast ~6.1:1) */
+    color: #2e7d32; /* Dark green on light background (~6:1 contrast) */
 }
 
 h1 {
@@ -67,8 +81,9 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* CARD COMPONENT */
 .card {
-    background: #ffffff;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -89,8 +104,9 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* FOOTER */
 footer {
-    background-color: #1b5e20; /* Same dark green as header for consistency */
+    background-color: #1b5e20; /* Same as header */
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -101,7 +117,7 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive adjustments */
+/* RESPONSIVE */
 @media (min-width: 600px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
