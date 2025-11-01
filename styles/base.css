@@ -14,7 +14,7 @@ body {
 /* ========== HEADER ========== */
 header {
     background-color: #1b5e20; /* Dark green */
-    color: #ffffff !important; /* Force white text */
+    color: #bebebe !important; /* Force white text */
     padding: 1rem;
     text-align: center;
 }
