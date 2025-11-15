@@ -21,10 +21,23 @@
         <!-- Hero Section with Responsive Images -->
         <section class="hero">
             <picture>
-                <img src="images/icelandlarge.webp" 
-                     alt="Stunning landscape of Iceland featuring mountains and northern lights"
-                        class="hero-image">
-            </picture>
+    <!-- Mobile -->
+    <source
+        srcset="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=600&h=400&fit=crop&fm=webp&q=80"
+        media="(max-width: 600px)">
+
+    <!-- Tablet -->
+    <source
+        srcset="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1200&h=700&fit=crop&fm=webp&q=80"
+        media="(max-width: 1200px)">
+
+    <!-- Desktop (fallback) -->
+    <img
+        src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&h=800&fit=crop&fm=webp&q=80"
+        alt="Stunning landscape of Iceland featuring mountains and northern lights"
+        class="hero-image">
+</picture>
+
         </section>
 
         <!-- Information Panels Container -->
