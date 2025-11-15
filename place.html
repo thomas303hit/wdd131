@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Iceland - Land of Fire and Ice. Discover key information about Iceland's geography, culture, and current weather conditions.">
+    <meta name="author" content="Student Name">
+    <title>Iceland - Land of Fire and Ice</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Iceland</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section with Responsive Images -->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1024px)" 
+                        srcset="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&h=800&fit=crop&fm=webp&q=80">
+                <source media="(min-width: 768px)" 
+                        srcset="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1200&h=700&fit=crop&fm=webp&q=80">
+                <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&h=600&fit=crop&fm=webp&q=80" 
+                     alt="Stunning landscape of Iceland featuring mountains and northern lights"
+                     loading="eager">
+            </picture>
+        </section>
+
+        <!-- Information Panels Container -->
+        <div class="info-container">
+            <!-- Data Panel -->
+            <section class="data-panel panel" data-testid="data-panel">
+                <div class="panel-header">
+                    <h2>📊 Data</h2>
+                </div>
+                <div class="panel-content">
+                    <dl>
+                        <dt>Area:</dt>
+                        <dd>103,000 km² (39,769 sq mi)</dd>
+                        
+                        <dt>Population:</dt>
+                        <dd>376,248 (2023)</dd>
+                        
+                        <dt>Capital:</dt>
+                        <dd>Reykjavík</dd>
+                        
+                        <dt>Languages:</dt>
+                        <dd>Icelandic</dd>
+                        
+                        <dt>Currency:</dt>
+                        <dd>Icelandic Króna (ISK)</dd>
+                        
+                        <dt>Time Zone:</dt>
+                        <dd>UTC+0 (GMT)</dd>
+                        
+                        <dt>Calling Code:</dt>
+                        <dd>+354</dd>
+                        
+                        <dt>Internet TLD:</dt>
+                        <dd>.is</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Weather Panel -->
+            <section class="weather-panel panel" data-testid="weather-panel">
+                <div class="panel-header">
+                    <h2 class="weather-heading">Weather</h2>
+                    <img src="images/1530390_weather_clouds_cloudy_rain_sunny_icon.svg" alt="Partly cloudy weather" class="weather-icon-mobile">
+                </div>
+                <div class="panel-content">
+                    <dl>
+                        <dt>Temperature:</dt>
+                        <dd id="temperature">42°F</dd>
+                        
+                        <dt>Conditions:</dt>
+                        <dd>Partly Cloudy</dd>
+                        
+                        <dt>Wind:</dt>
+                        <dd id="wind-speed">5 mph</dd>
+                        
+                        <dt>Wind Chill:</dt>
+                        <dd id="wind-chill" data-testid="wind-chill-value">Calculating...</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Thomas Guedes Brazil | <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
