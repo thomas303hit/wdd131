@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A dynamic and filterable temple album showcasing different temples by size, age, and style for easy viewing.">
+    <meta name="description" content="A dynamic and filterable temple album showcasing images, information, and categories for temples around the world.">
 
     <meta name="author" content="Thomas Guedes">
     <title>Temple Album</title>
@@ -19,23 +19,20 @@
 </head>
 
 <body>
-
+    
     <header>
-        <h1>Temple Album</h1>
-
-        <nav>
-            <button id="menu" class="hamburger">&#9776;</button>
-
-            <ul id="primarynav">
-                <li><a href="#" data-filter="home" class="active">Home</a></li>
-                <li><a href="#" data-filter="old">Old</a></li>
-                <li><a href="#" data-filter="new">New</a></li>
-                <li><a href="#" data-filter="large">Large</a></li>
-                <li><a href="#" data-filter="small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <h1>Temple Album</h1>
+    <nav>
+        <button id="menu" class="hamburger">&#9776;</button>
+        <ul id="primarynav">
+            <li><a href="#" data-filter="home" class="active">Home</a></li>
+            <li><a href="#" data-filter="old">Old</a></li>
+            <li><a href="#" data-filter="new">New</a></li>
+            <li><a href="#" data-filter="large">Large</a></li>
+            <li><a href="#" data-filter="small">Small</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <div id="temple-container" class="grid"></div>
     </main>
