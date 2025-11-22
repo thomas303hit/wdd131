@@ -70,12 +70,13 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
 
+    // EXTRA 3 temples — UPDATED TO WEBP ✔
     {
         templeName: "Curitiba Brazil",
         location: "Curitiba, Brazil",
         dedicated: "2008, June, 1",
         area: 13125,
-        imageUrl: "https://byui-cit.github.io/cit260/examples/images/temples/curitiba-brazil-temple.webp"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-18837.jpg"
     },
 
     {
@@ -83,7 +84,7 @@ const temples = [
         location: "São Paulo, Brazil",
         dedicated: "1978, October, 30",
         area: 59246,
-        imageUrl: "https://byui-cit.github.io/cit260/examples/images/temples/sao-paulo-brazil-temple.webp"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
     },
 
     {
@@ -91,7 +92,7 @@ const temples = [
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 40713,
-        imageUrl: "https://byui-cit.github.io/cit260/examples/images/temples/rome-italy-temple.webp"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
     }
 ];
 
