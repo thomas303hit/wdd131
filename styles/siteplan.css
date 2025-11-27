@@ -1,0 +1,54 @@
+:root {
+  --primary: #1E90FF;
+  --accent: #F4A261;
+  --text: #111111;
+  --bg: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  margin: 20px 0;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Wireframe styles */
+.wireframe {
+  border: 2px dashed var(--primary);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.wireframe div {
+  border: 1px solid var(--accent);
+  padding: 8px;
+  margin: 4px 0;
+}
