@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Confirmation page for your submitted product review, displaying details and a counter of total reviews.">
-    <meta name="author" content="Student Name">
-    <title>Review Confirmation</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Review Submitted - Practicing Exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Thank you for submitting your product review.">
+  <meta name="author" content="Thomas Guedes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/review.css" />
+    <link rel="stylesheet" href="styles/review-large.css" />
+
+    <script src="scripts/review.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <h1>Review Submitted!</h1>
-    </header>
-    <main>
-        <section id="confirmation">
-            <h2>Your Review Details</h2>
-            <p id="productDisplay"></p>
-            <p id="ratingDisplay"></p>
-            <p id="dateDisplay"></p>
-            <p id="featuresDisplay"></p>
-            <p id="reviewDisplay"></p>
-            <p id="userDisplay"></p>
-            <p id="counterDisplay"></p>
-        </section>
-        <a href="form.html">Submit Another Review</a>
-    </main>
-    <footer>
-        <p>© 2025 Product Review Site</p>
-    </footer>
-    <script src="js/review.js"></script>
+  <main>
+    <h1>Thank You!</h1>
+    <p>Your review has been successfully submitted.</p>
+    <p>We appreciate your feedback and will use it to improve our products.</p>
+    <a href="form.html" class="button">Return to Home</a>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Thomas Guedes | Brazil</p>
+
+    <p><span id="lastmodified"></span></p>
+  </footer>
 </body>
 </html>
