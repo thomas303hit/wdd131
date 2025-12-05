@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FitLife Gym</title>
+    <meta name="description" content="Contact FitLife Gym for tours, inquiries, and membership details.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/menu.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">FitLife Gym</div>
+    <nav class="desktop-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button id="hamburgerBtn" class="hamburger" aria-label="Toggle mobile menu">☰</button>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+<main class="page">
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>Send us a message — we respond within 24 hours.</p>
+        </div>
+    </section>
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Location</h3>
+                    <p>123 Fitness Ave<br>City, ST 12345</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@fitlifegym.com</p>
+                </div>
+            </div>
+        </div>
+        <form class="contact-form" action="#" method="post" novalidate>
+            <label for="name">Full Name *</label>
+            <input id="name" type="text" required placeholder="Enter your full name">
+            <label for="email">Email Address *</label>
+            <input id="email" type="email" required placeholder="your@email.com">
+            <label for="phone">Phone (Optional)</label>
+            <input id="phone" type="tel" placeholder="Your phone number">
+            <label for="message">Message *</label>
+            <textarea id="message" rows="4" required placeholder="Tell us about your goals..."></textarea>
+            <button type="submit" class="cta-btn">Submit Inquiry</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="page"><p>&copy; 2025 FitLife Gym. All Rights Reserved.</p></div>
+</footer>
+</body>
+</html>
